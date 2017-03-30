@@ -1,0 +1,38 @@
+GIT TUTORIAL NOTES — basic commands and workflow
+
+To initialize a local git repository
+		$ git init
+Push to remote repository
+		$ git push -u origin my_branch
+Pull latest changes from remote repository
+		$ git pull origin my_branch
+
+This is the basic workflow of git:
+	1: Modify a file from the working directory.
+	2: Add these files to the staging area (add)
+		$ git add file.txt
+	3: Commit moves the files from the staging area (commit,push)
+		$ git commit -m “Add file.txt”
+
+		Working Directory
+			|
+			|	(Git add operation)
+			v
+		Staging Area
+			|
+			|	(Git commit operation)
+			v
+		Git repository
+
+To check the status of your workflow, use status
+		$ git status
+To check the commit history (when things were added/removed), use log
+		$ git log
+
+Branches:
+	To see all of your branches, use branch
+		$ git branch
+	To make a new branch, use branch new_branch
+		$ git branch new_branch
+	To switch to the new branch, use checkout
+		$ git checkout new_branch

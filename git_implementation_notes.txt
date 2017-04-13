@@ -36,3 +36,5 @@ Branches:
 		$ git branch new_branch
 	To switch to the new branch, use checkout
 		$ git checkout new_branch
+
+new

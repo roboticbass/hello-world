@@ -2,8 +2,10 @@ GIT TUTORIAL NOTES — basic commands and workflow
 
 To initialize a local git repository
 		$ git init
+To track a remote repository
+		$ git remote add origin https://github.com/my_repo/my_branch.git
 Push to remote repository
-		$ git push -u origin my_branch
+		$ git push -u origin my_branch  (warning - vim is a dick - esc :wq)
 Pull latest changes from remote repository
 		$ git pull origin my_branch
 
@@ -36,3 +38,5 @@ Branches:
 		$ git branch new_branch
 	To switch to the new branch, use checkout
 		$ git checkout new_branch
+
+new
